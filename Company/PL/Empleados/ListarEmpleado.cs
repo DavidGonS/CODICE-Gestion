@@ -36,16 +36,28 @@ namespace Company.PL.Empleados
 
             if (reader.Read())
             {
+                tbLista.AppendText("ID: ");
                 tbLista.AppendText(reader["id"].ToString());
-                tbLista.AppendText("   ");
+                tbLista.AppendText(Environment.NewLine);
+
+                tbLista.AppendText("Nombre: ");
                 tbLista.AppendText(reader["nombre"].ToString());
-                tbLista.AppendText("   ");
+                tbLista.AppendText(Environment.NewLine);
+
+                tbLista.AppendText("Primer Apellido: ");
                 tbLista.AppendText(reader["primerApellido"].ToString());
-                tbLista.AppendText("   ");
+                tbLista.AppendText(Environment.NewLine);
+
+                tbLista.AppendText("Segundo Apellido: ");
                 tbLista.AppendText(reader["segundoApellido"].ToString());
-                tbLista.AppendText("   ");
+                tbLista.AppendText(Environment.NewLine);
+
+                tbLista.AppendText("Email: ");
                 tbLista.AppendText(reader["email"].ToString());
-            } else
+                tbLista.AppendText(Environment.NewLine);
+
+            }
+            else
             {
                 MessageBox.Show("No existe el empleado con el id: " + id);
             }
