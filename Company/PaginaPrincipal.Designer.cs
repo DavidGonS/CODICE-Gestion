@@ -49,12 +49,13 @@
             // 
             // btEntrar
             // 
+            this.btEntrar.BackColor = System.Drawing.SystemColors.Window;
             this.btEntrar.Location = new System.Drawing.Point(208, 307);
             this.btEntrar.Name = "btEntrar";
             this.btEntrar.Size = new System.Drawing.Size(75, 23);
             this.btEntrar.TabIndex = 1;
             this.btEntrar.Text = "ENTRAR";
-            this.btEntrar.UseVisualStyleBackColor = true;
+            this.btEntrar.UseVisualStyleBackColor = false;
             this.btEntrar.Click += new System.EventHandler(this.btEntrar_Click);
             // 
             // label1
@@ -77,6 +78,7 @@
             // 
             // tbUsuario
             // 
+            this.tbUsuario.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.tbUsuario.Location = new System.Drawing.Point(229, 181);
             this.tbUsuario.Name = "tbUsuario";
             this.tbUsuario.Size = new System.Drawing.Size(100, 20);
@@ -84,6 +86,7 @@
             // 
             // tbContrasena
             // 
+            this.tbContrasena.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.tbContrasena.Location = new System.Drawing.Point(229, 235);
             this.tbContrasena.Name = "tbContrasena";
             this.tbContrasena.PasswordChar = '*';
@@ -94,6 +97,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(484, 451);
             this.Controls.Add(this.tbContrasena);
             this.Controls.Add(this.tbUsuario);

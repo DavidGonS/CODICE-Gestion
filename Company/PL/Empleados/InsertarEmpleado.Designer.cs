@@ -79,6 +79,7 @@
             // 
             // tbNombre
             // 
+            this.tbNombre.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.tbNombre.Location = new System.Drawing.Point(36, 104);
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(100, 20);
@@ -86,6 +87,7 @@
             // 
             // tbPrimerApellido
             // 
+            this.tbPrimerApellido.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.tbPrimerApellido.Location = new System.Drawing.Point(36, 159);
             this.tbPrimerApellido.Name = "tbPrimerApellido";
             this.tbPrimerApellido.Size = new System.Drawing.Size(100, 20);
@@ -93,6 +95,7 @@
             // 
             // tbSegundoApellido
             // 
+            this.tbSegundoApellido.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.tbSegundoApellido.Location = new System.Drawing.Point(36, 212);
             this.tbSegundoApellido.Name = "tbSegundoApellido";
             this.tbSegundoApellido.Size = new System.Drawing.Size(100, 20);
@@ -100,6 +103,7 @@
             // 
             // tbEmail
             // 
+            this.tbEmail.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.tbEmail.Location = new System.Drawing.Point(36, 262);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(330, 20);
@@ -107,18 +111,19 @@
             // 
             // btEnviar
             // 
+            this.btEnviar.BackColor = System.Drawing.SystemColors.Window;
             this.btEnviar.Location = new System.Drawing.Point(36, 308);
             this.btEnviar.Name = "btEnviar";
             this.btEnviar.Size = new System.Drawing.Size(75, 23);
             this.btEnviar.TabIndex = 8;
             this.btEnviar.Text = "ENVIAR";
-            this.btEnviar.UseVisualStyleBackColor = true;
+            this.btEnviar.UseVisualStyleBackColor = false;
             this.btEnviar.Click += new System.EventHandler(this.btEnviar_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Company.Properties.Resources.logoCodice;
-            this.pictureBox1.Location = new System.Drawing.Point(36, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(115, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -129,6 +134,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(484, 451);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btEnviar);

@@ -38,48 +38,53 @@
             // 
             // btInsertar
             // 
+            this.btInsertar.BackColor = System.Drawing.SystemColors.Window;
             this.btInsertar.Location = new System.Drawing.Point(36, 95);
             this.btInsertar.Name = "btInsertar";
             this.btInsertar.Size = new System.Drawing.Size(147, 134);
             this.btInsertar.TabIndex = 0;
             this.btInsertar.Text = "INSERTAR ";
-            this.btInsertar.UseVisualStyleBackColor = true;
+            this.btInsertar.UseVisualStyleBackColor = false;
             this.btInsertar.Click += new System.EventHandler(this.btInsertar_Click);
             // 
             // btListar
             // 
+            this.btListar.BackColor = System.Drawing.SystemColors.Window;
+            this.btListar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btListar.Location = new System.Drawing.Point(282, 95);
             this.btListar.Name = "btListar";
             this.btListar.Size = new System.Drawing.Size(145, 134);
             this.btListar.TabIndex = 1;
             this.btListar.Text = "LISTAR";
-            this.btListar.UseVisualStyleBackColor = true;
+            this.btListar.UseVisualStyleBackColor = false;
             this.btListar.Click += new System.EventHandler(this.btListar_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.SystemColors.Window;
             this.button3.Location = new System.Drawing.Point(36, 262);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(148, 134);
             this.button3.TabIndex = 2;
             this.button3.Text = "MODIFICAR";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btEliminar
             // 
+            this.btEliminar.BackColor = System.Drawing.SystemColors.Window;
             this.btEliminar.Location = new System.Drawing.Point(282, 262);
             this.btEliminar.Name = "btEliminar";
             this.btEliminar.Size = new System.Drawing.Size(145, 134);
             this.btEliminar.TabIndex = 3;
             this.btEliminar.Text = "ELIMINAR";
-            this.btEliminar.UseVisualStyleBackColor = true;
+            this.btEliminar.UseVisualStyleBackColor = false;
             this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Company.Properties.Resources.logoCodice;
-            this.pictureBox1.Location = new System.Drawing.Point(36, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(115, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -90,6 +95,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(484, 451);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btEliminar);

@@ -36,28 +36,30 @@
             // 
             // btDepartamento
             // 
+            this.btDepartamento.BackColor = System.Drawing.SystemColors.Window;
             this.btDepartamento.Location = new System.Drawing.Point(36, 155);
             this.btDepartamento.Name = "btDepartamento";
             this.btDepartamento.Size = new System.Drawing.Size(147, 134);
             this.btDepartamento.TabIndex = 0;
             this.btDepartamento.Text = "DEPARTAMENTOS";
-            this.btDepartamento.UseVisualStyleBackColor = true;
+            this.btDepartamento.UseVisualStyleBackColor = false;
             this.btDepartamento.Click += new System.EventHandler(this.btDepartamento_Click);
             // 
             // btEmpleados
             // 
+            this.btEmpleados.BackColor = System.Drawing.SystemColors.Window;
             this.btEmpleados.Location = new System.Drawing.Point(278, 155);
             this.btEmpleados.Name = "btEmpleados";
             this.btEmpleados.Size = new System.Drawing.Size(147, 134);
             this.btEmpleados.TabIndex = 1;
             this.btEmpleados.Text = "EMPLEADOS";
-            this.btEmpleados.UseVisualStyleBackColor = true;
+            this.btEmpleados.UseVisualStyleBackColor = false;
             this.btEmpleados.Click += new System.EventHandler(this.btEmpleados_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Company.Properties.Resources.logoCodice;
-            this.pictureBox1.Location = new System.Drawing.Point(36, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(115, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -68,6 +70,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(484, 451);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btEmpleados);

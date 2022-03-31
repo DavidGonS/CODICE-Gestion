@@ -48,7 +48,7 @@
             // 
             this.label1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(88, 80);
+            this.label1.Location = new System.Drawing.Point(37, 77);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 13);
             this.label1.TabIndex = 0;
@@ -57,7 +57,8 @@
             // tbId
             // 
             this.tbId.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.tbId.Location = new System.Drawing.Point(259, 77);
+            this.tbId.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.tbId.Location = new System.Drawing.Point(208, 74);
             this.tbId.Name = "tbId";
             this.tbId.Size = new System.Drawing.Size(100, 20);
             this.tbId.TabIndex = 1;
@@ -65,19 +66,21 @@
             // btBuscar
             // 
             this.btBuscar.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.btBuscar.Location = new System.Drawing.Point(259, 121);
+            this.btBuscar.BackColor = System.Drawing.SystemColors.Window;
+            this.btBuscar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btBuscar.Location = new System.Drawing.Point(208, 118);
             this.btBuscar.Name = "btBuscar";
             this.btBuscar.Size = new System.Drawing.Size(75, 23);
             this.btBuscar.TabIndex = 2;
             this.btBuscar.Text = "BUSCAR";
-            this.btBuscar.UseVisualStyleBackColor = true;
+            this.btBuscar.UseVisualStyleBackColor = false;
             this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
             // 
             // label2
             // 
             this.label2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(88, 313);
+            this.label2.Location = new System.Drawing.Point(37, 310);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 3;
@@ -87,7 +90,7 @@
             // 
             this.label3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(88, 269);
+            this.label3.Location = new System.Drawing.Point(37, 266);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 13);
             this.label3.TabIndex = 4;
@@ -97,7 +100,7 @@
             // 
             this.label4.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(88, 217);
+            this.label4.Location = new System.Drawing.Point(37, 214);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 13);
             this.label4.TabIndex = 5;
@@ -107,7 +110,7 @@
             // 
             this.label5.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(88, 172);
+            this.label5.Location = new System.Drawing.Point(37, 169);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 13);
             this.label5.TabIndex = 6;
@@ -116,7 +119,8 @@
             // tbEmail
             // 
             this.tbEmail.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.tbEmail.Location = new System.Drawing.Point(259, 310);
+            this.tbEmail.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.tbEmail.Location = new System.Drawing.Point(208, 307);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(100, 20);
             this.tbEmail.TabIndex = 7;
@@ -124,7 +128,8 @@
             // tbSegundoApellido
             // 
             this.tbSegundoApellido.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.tbSegundoApellido.Location = new System.Drawing.Point(259, 266);
+            this.tbSegundoApellido.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.tbSegundoApellido.Location = new System.Drawing.Point(208, 263);
             this.tbSegundoApellido.Name = "tbSegundoApellido";
             this.tbSegundoApellido.Size = new System.Drawing.Size(100, 20);
             this.tbSegundoApellido.TabIndex = 8;
@@ -132,7 +137,8 @@
             // tbPrimerApellido
             // 
             this.tbPrimerApellido.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.tbPrimerApellido.Location = new System.Drawing.Point(259, 214);
+            this.tbPrimerApellido.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.tbPrimerApellido.Location = new System.Drawing.Point(208, 211);
             this.tbPrimerApellido.Name = "tbPrimerApellido";
             this.tbPrimerApellido.Size = new System.Drawing.Size(100, 20);
             this.tbPrimerApellido.TabIndex = 9;
@@ -140,7 +146,8 @@
             // tbNombre
             // 
             this.tbNombre.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.tbNombre.Location = new System.Drawing.Point(259, 169);
+            this.tbNombre.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.tbNombre.Location = new System.Drawing.Point(208, 166);
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(100, 20);
             this.tbNombre.TabIndex = 10;
@@ -148,18 +155,19 @@
             // btModificar
             // 
             this.btModificar.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.btModificar.Location = new System.Drawing.Point(259, 364);
+            this.btModificar.BackColor = System.Drawing.SystemColors.Window;
+            this.btModificar.Location = new System.Drawing.Point(208, 361);
             this.btModificar.Name = "btModificar";
             this.btModificar.Size = new System.Drawing.Size(75, 23);
             this.btModificar.TabIndex = 11;
             this.btModificar.Text = "MODIFICAR";
-            this.btModificar.UseVisualStyleBackColor = true;
+            this.btModificar.UseVisualStyleBackColor = false;
             this.btModificar.Click += new System.EventHandler(this.btModificar_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Company.Properties.Resources.logoCodice;
-            this.pictureBox1.Location = new System.Drawing.Point(36, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(115, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -170,6 +178,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(484, 451);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btModificar);

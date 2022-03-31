@@ -49,6 +49,7 @@
             // 
             // tbId
             // 
+            this.tbId.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.tbId.Location = new System.Drawing.Point(336, 59);
             this.tbId.Name = "tbId";
             this.tbId.Size = new System.Drawing.Size(100, 20);
@@ -61,12 +62,13 @@
             // 
             // btBuscar
             // 
+            this.btBuscar.BackColor = System.Drawing.SystemColors.Window;
             this.btBuscar.Location = new System.Drawing.Point(336, 96);
             this.btBuscar.Name = "btBuscar";
             this.btBuscar.Size = new System.Drawing.Size(100, 36);
             this.btBuscar.TabIndex = 4;
             this.btBuscar.Text = "BUSCAR";
-            this.btBuscar.UseVisualStyleBackColor = true;
+            this.btBuscar.UseVisualStyleBackColor = false;
             this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
             // 
             // tbLista
@@ -81,24 +83,25 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Company.Properties.Resources.logoCodice;
-            this.pictureBox1.Location = new System.Drawing.Point(36, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(115, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // ListarEmpleados
+            // ListarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tbLista);
             this.Controls.Add(this.btBuscar);
             this.Controls.Add(this.tbId);
             this.Controls.Add(this.lbId);
-            this.Name = "ListarEmpleados";
+            this.Name = "ListarEmpleado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CODICE\\empleados-listar";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
