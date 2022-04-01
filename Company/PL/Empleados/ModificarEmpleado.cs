@@ -21,12 +21,18 @@ namespace Company.PL.Empleados
             InitializeComponent();
         }
 
+        public ModificarEmpleado(string usuario)
+        {
+            InitializeComponent();
+            lbUsuario.Text = usuario;
+        }
+
         private void btBuscar_Click(object sender, EventArgs e)
         {
             connection.Open();
             string id = tbId.Text;
 
-            string query = "SELECT id, nombre, primerApellido, segundoApellido, email " +
+            string query = "SELECT id, nombre, primerApellido, segundoApellido, email, nombreDepartamento " +
                             "FROM Empleados " +
                             "WHERE id='" + id + "'";
 
@@ -38,6 +44,7 @@ namespace Company.PL.Empleados
                 tbPrimerApellido.Text = reader["primerApellido"].ToString();
                 tbSegundoApellido.Text = reader["segundoApellido"].ToString();
                 tbEmail.Text = reader["email"].ToString();
+                tbNombreDepartamento.Text = reader["nombreDepartamento"].ToString();
                 btModificar.Enabled = true;
             } else
             {
@@ -54,9 +61,10 @@ namespace Company.PL.Empleados
             string primerApellido = tbPrimerApellido.Text;
             string segundoApellido = tbSegundoApellido.Text;
             string email = tbEmail.Text;
+            string nombreDepartamento = tbNombreDepartamento.Text;
 
             string query = "UPDATE Empleados " +
-                            "SET nombre='" + nombre + "', primerApellido='" + primerApellido + "', segundoApellido='" + segundoApellido + "', email='" + email+ "' " +
+                            "SET nombre='" + nombre + "', primerApellido='" + primerApellido + "', segundoApellido='" + segundoApellido + "', email='" + email + "', nombreDepartamento='" + nombreDepartamento + "'" +
                             "WHERE id=" + id;
             SqlCommand command = new SqlCommand(query, connection);
             int count = command.ExecuteNonQuery();
@@ -68,6 +76,7 @@ namespace Company.PL.Empleados
                 tbPrimerApellido.Text = "";
                 tbSegundoApellido.Text = "";
                 tbEmail.Text = "";
+                tbNombreDepartamento.Text = "";
             } else
             {
                 MessageBox.Show("No existe el empleado");

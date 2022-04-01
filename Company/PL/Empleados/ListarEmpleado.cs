@@ -21,13 +21,19 @@ namespace Company.PL.Empleados
             InitializeComponent();
         }
 
+        public ListarEmpleado(string usuario)
+        {
+            InitializeComponent();
+            lbUsuario.Text = usuario;
+        }
+
         private void btBuscar_Click(object sender, EventArgs e)
         {
             connection.Open();
 
             string id = tbId.Text;
 
-            string query = "SELECT id, nombre, primerApellido, segundoApellido, email " +
+            string query = "SELECT id, nombre, primerApellido, segundoApellido, email, nombreDepartamento " +
                             "FROM Empleados " +
                             "WHERE id='" + id + "'";
 
@@ -36,6 +42,8 @@ namespace Company.PL.Empleados
 
             if (reader.Read())
             {
+                tbLista.AppendText(Environment.NewLine);
+
                 tbLista.AppendText("ID: ");
                 tbLista.AppendText(reader["id"].ToString());
                 tbLista.AppendText(Environment.NewLine);
@@ -54,6 +62,10 @@ namespace Company.PL.Empleados
 
                 tbLista.AppendText("Email: ");
                 tbLista.AppendText(reader["email"].ToString());
+                tbLista.AppendText(Environment.NewLine);
+
+                tbLista.AppendText("Nombre Departamento: ");
+                tbLista.AppendText(reader["nombreDepartamento"].ToString());
                 tbLista.AppendText(Environment.NewLine);
 
             }

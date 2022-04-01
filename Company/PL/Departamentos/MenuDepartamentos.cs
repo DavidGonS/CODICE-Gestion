@@ -8,13 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Company.PL
+namespace Company.PL.Departamentos
 {
-    public partial class Departamento : Form
+    public partial class MenuDepartamentos : Form
     {
-        public Departamento()
+        public MenuDepartamentos()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            InsertarDepartamento insertar = new InsertarDepartamento();
+            insertar.Show();
+        }
+
+        private void btListar_Click(object sender, EventArgs e)
+        {
+            ListarDepartamento listar = new ListarDepartamento();
+            listar.Show();
         }
     }
 }

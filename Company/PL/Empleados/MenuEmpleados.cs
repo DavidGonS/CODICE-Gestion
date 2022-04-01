@@ -17,27 +17,37 @@ namespace Company.PL
             InitializeComponent();
         }
 
+        public MenuEmpleados(string usuario)
+        {
+            InitializeComponent();
+            lbUsuario.Text = usuario;
+        }
+
         private void btInsertar_Click(object sender, EventArgs e)
         {
-            InsertarEmpleado insertar = new InsertarEmpleado();
+            string usuario = lbUsuario.Text;
+            InsertarEmpleado insertar = new InsertarEmpleado(usuario);
             insertar.Show();
         }
 
         private void btListar_Click(object sender, EventArgs e)
         {
-            Empleados.ListarEmpleado listar = new Empleados.ListarEmpleado();
+            string usuario = lbUsuario.Text;
+            Empleados.ListarEmpleado listar = new Empleados.ListarEmpleado(usuario);
             listar.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Empleados.ModificarEmpleado modificar = new Empleados.ModificarEmpleado();
+            string usuario = lbUsuario.Text;
+            Empleados.ModificarEmpleado modificar = new Empleados.ModificarEmpleado(usuario);
             modificar.Show();
         }
 
         private void btEliminar_Click(object sender, EventArgs e)
         {
-            Empleados.EliminarEmpleado eliminar = new Empleados.EliminarEmpleado();
+            string usuario = lbUsuario.Text;
+            Empleados.EliminarEmpleado eliminar = new Empleados.EliminarEmpleado(usuario);
             eliminar.Show();
         }
     }

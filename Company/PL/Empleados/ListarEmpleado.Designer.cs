@@ -35,15 +35,17 @@
             this.btBuscar = new System.Windows.Forms.Button();
             this.tbLista = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbUsuario = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbId
             // 
             this.lbId.AutoSize = true;
+            this.lbId.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbId.Location = new System.Drawing.Point(369, 43);
             this.lbId.Name = "lbId";
-            this.lbId.Size = new System.Drawing.Size(21, 13);
+            this.lbId.Size = new System.Drawing.Size(22, 16);
             this.lbId.TabIndex = 0;
             this.lbId.Text = "ID:";
             // 
@@ -63,6 +65,7 @@
             // btBuscar
             // 
             this.btBuscar.BackColor = System.Drawing.SystemColors.Window;
+            this.btBuscar.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btBuscar.Location = new System.Drawing.Point(336, 96);
             this.btBuscar.Name = "btBuscar";
             this.btBuscar.Size = new System.Drawing.Size(100, 36);
@@ -73,6 +76,7 @@
             // 
             // tbLista
             // 
+            this.tbLista.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLista.Location = new System.Drawing.Point(109, 159);
             this.tbLista.Multiline = true;
             this.tbLista.Name = "tbLista";
@@ -90,12 +94,22 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // lbUsuario
+            // 
+            this.lbUsuario.AutoSize = true;
+            this.lbUsuario.Location = new System.Drawing.Point(624, 23);
+            this.lbUsuario.Name = "lbUsuario";
+            this.lbUsuario.Size = new System.Drawing.Size(35, 13);
+            this.lbUsuario.TabIndex = 7;
+            this.lbUsuario.Text = "label1";
+            // 
             // ListarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbUsuario);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tbLista);
             this.Controls.Add(this.btBuscar);
@@ -118,5 +132,6 @@
         private System.Windows.Forms.Button btBuscar;
         private System.Windows.Forms.TextBox tbLista;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbUsuario;
     }
 }

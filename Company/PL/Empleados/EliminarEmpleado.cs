@@ -21,12 +21,18 @@ namespace Company.PL.Empleados
             InitializeComponent();
         }
 
+        public EliminarEmpleado(string usuario)
+        {
+            InitializeComponent();
+            lbUsuario.Text = usuario;
+        }
+
         private void btBuscar_Click(object sender, EventArgs e)
         {
             connection.Open();
             string id = tbId.Text;
 
-            string query = "SELECT id, nombre, primerApellido, segundoApellido, email " +
+            string query = "SELECT id, nombre, primerApellido, segundoApellido, email, nombreDepartamento " +
                             "FROM Empleados " +
                             "WHERE id='" + id + "'";
 
@@ -39,6 +45,7 @@ namespace Company.PL.Empleados
                 lbPrimerApellido.Text = reader["primerApellido"].ToString();
                 lbSegundoApellido.Text = reader["segundoApellido"].ToString();
                 lbEmail.Text = reader["email"].ToString();
+                lbNombreDepartamento.Text = reader["nombreDepartamento"].ToString();
                 btEliminar.Enabled = true;
             }
             else
@@ -63,6 +70,7 @@ namespace Company.PL.Empleados
                 lbPrimerApellido.Text = "";
                 lbSegundoApellido.Text = "";
                 lbEmail.Text = "";
+                lbNombreDepartamento.Text = "";
                 MessageBox.Show("El empleado con id " + id + " ha sido eliminado correctamente");
             } else
             {

@@ -31,12 +31,14 @@
             this.btDepartamento = new System.Windows.Forms.Button();
             this.btEmpleados = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbUsuario = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btDepartamento
             // 
             this.btDepartamento.BackColor = System.Drawing.SystemColors.Window;
+            this.btDepartamento.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btDepartamento.Location = new System.Drawing.Point(36, 155);
             this.btDepartamento.Name = "btDepartamento";
             this.btDepartamento.Size = new System.Drawing.Size(147, 134);
@@ -48,6 +50,7 @@
             // btEmpleados
             // 
             this.btEmpleados.BackColor = System.Drawing.SystemColors.Window;
+            this.btEmpleados.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btEmpleados.Location = new System.Drawing.Point(278, 155);
             this.btEmpleados.Name = "btEmpleados";
             this.btEmpleados.Size = new System.Drawing.Size(147, 134);
@@ -66,12 +69,22 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // lbUsuario
+            // 
+            this.lbUsuario.AutoSize = true;
+            this.lbUsuario.Location = new System.Drawing.Point(324, 27);
+            this.lbUsuario.Name = "lbUsuario";
+            this.lbUsuario.Size = new System.Drawing.Size(35, 13);
+            this.lbUsuario.TabIndex = 3;
+            this.lbUsuario.Text = "label1";
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(484, 451);
+            this.Controls.Add(this.lbUsuario);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btEmpleados);
             this.Controls.Add(this.btDepartamento);
@@ -80,6 +93,7 @@
             this.Text = "CODICE\\Menu";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -88,6 +102,7 @@
         private System.Windows.Forms.Button btDepartamento;
         private System.Windows.Forms.Button btEmpleados;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbUsuario;
     }
 }
 

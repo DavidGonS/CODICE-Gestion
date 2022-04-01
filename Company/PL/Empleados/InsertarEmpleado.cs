@@ -20,6 +20,12 @@ namespace Company.PL
             InitializeComponent();
         }
 
+        public InsertarEmpleado(string usuario)
+        {
+            InitializeComponent();
+            lbUsuario.Text = usuario;
+        }
+
         private void btEnviar_Click(object sender, EventArgs e)
         {
             connection.Open();
@@ -27,9 +33,10 @@ namespace Company.PL
             string primerApellido = tbPrimerApellido.Text;
             string segundoApellido = tbSegundoApellido.Text;
             string email = tbEmail.Text;
+            string nombreDepartamento = tbNombreDepartamento.Text;
 
-            string query = "INSERT INTO Empleados(nombre, primerApellido, segundoApellido, email) " +
-                "VALUES('" + nombre + "','" + primerApellido + "','" + segundoApellido + "','" + email + "')";
+            string query = "INSERT INTO Empleados(nombre, primerApellido, segundoApellido, email, nombreDepartamento) " +
+                "VALUES('" + nombre + "','" + primerApellido + "','" + segundoApellido + "','" + email + "','" + nombreDepartamento + "')";
             SqlCommand command = new SqlCommand(query, connection);
             command.ExecuteNonQuery();
             MessageBox.Show("Datos guardados correctamente");
@@ -38,6 +45,7 @@ namespace Company.PL
             tbPrimerApellido.Text = "";
             tbSegundoApellido.Text = "";
             tbEmail.Text = "";
+            tbNombreDepartamento.Text = "";
             connection.Close();
         }
     }

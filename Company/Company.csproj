@@ -52,6 +52,24 @@
     <Compile Include="PaginaPrincipal.Designer.cs">
       <DependentUpon>PaginaPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\Departamentos\InsertarDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Departamentos\InsertarDepartamento.Designer.cs">
+      <DependentUpon>InsertarDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Departamentos\ListarDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Departamentos\ListarDepartamento.Designer.cs">
+      <DependentUpon>ListarDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Departamentos\MenuDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Departamentos\MenuDepartamentos.Designer.cs">
+      <DependentUpon>MenuDepartamentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\Empleados\EliminarEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,12 +102,6 @@
     <Compile Include="PL\Empleados\InsertarEmpleado.Designer.cs">
       <DependentUpon>InsertarEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="PL\Departamentos\MenuDepartamentos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PL\Departamentos\MenuDepartamentos.Designer.cs">
-      <DependentUpon>MenuDepartamentos.cs</DependentUpon>
-    </Compile>
     <Compile Include="PL\Empleados\MenuEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +115,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PaginaPrincipal.resx">
       <DependentUpon>PaginaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Departamentos\InsertarDepartamento.resx">
+      <DependentUpon>InsertarDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Departamentos\ListarDepartamento.resx">
+      <DependentUpon>ListarDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Departamentos\MenuDepartamentos.resx">
+      <DependentUpon>MenuDepartamentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Empleados\EliminarEmpleado.resx">
       <DependentUpon>EliminarEmpleado.cs</DependentUpon>

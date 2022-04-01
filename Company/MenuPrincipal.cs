@@ -19,15 +19,22 @@ namespace Company
             InitializeComponent();
         }
 
+        public MenuPrincipal(string usuario)
+        {
+            InitializeComponent();
+            lbUsuario.Text = "User: " + usuario;
+        }
+
         private void btDepartamento_Click(object sender, EventArgs e)
         {
-            Departamento departamento = new Departamento();
-            departamento.Show();
+            PL.Departamentos.MenuDepartamentos departamentos = new PL.Departamentos.MenuDepartamentos();
+            departamentos.Show();
         }
 
         private void btEmpleados_Click(object sender, EventArgs e)
         {
-            MenuEmpleados menu = new MenuEmpleados();
+            string usuario = lbUsuario.Text;
+            MenuEmpleados menu = new MenuEmpleados(usuario);
             menu.Show();
         }
     }

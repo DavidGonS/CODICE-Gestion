@@ -33,15 +33,18 @@
             this.button3 = new System.Windows.Forms.Button();
             this.btEliminar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbUsuario = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btInsertar
             // 
             this.btInsertar.BackColor = System.Drawing.SystemColors.Window;
-            this.btInsertar.Location = new System.Drawing.Point(36, 95);
+            this.btInsertar.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInsertar.Location = new System.Drawing.Point(33, 172);
             this.btInsertar.Name = "btInsertar";
-            this.btInsertar.Size = new System.Drawing.Size(147, 134);
+            this.btInsertar.Size = new System.Drawing.Size(141, 33);
             this.btInsertar.TabIndex = 0;
             this.btInsertar.Text = "INSERTAR ";
             this.btInsertar.UseVisualStyleBackColor = false;
@@ -50,10 +53,11 @@
             // btListar
             // 
             this.btListar.BackColor = System.Drawing.SystemColors.Window;
+            this.btListar.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btListar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btListar.Location = new System.Drawing.Point(282, 95);
+            this.btListar.Location = new System.Drawing.Point(299, 172);
             this.btListar.Name = "btListar";
-            this.btListar.Size = new System.Drawing.Size(145, 134);
+            this.btListar.Size = new System.Drawing.Size(140, 33);
             this.btListar.TabIndex = 1;
             this.btListar.Text = "LISTAR";
             this.btListar.UseVisualStyleBackColor = false;
@@ -62,9 +66,10 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.Window;
-            this.button3.Location = new System.Drawing.Point(36, 262);
+            this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(33, 243);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(148, 134);
+            this.button3.Size = new System.Drawing.Size(141, 33);
             this.button3.TabIndex = 2;
             this.button3.Text = "MODIFICAR";
             this.button3.UseVisualStyleBackColor = false;
@@ -73,9 +78,10 @@
             // btEliminar
             // 
             this.btEliminar.BackColor = System.Drawing.SystemColors.Window;
-            this.btEliminar.Location = new System.Drawing.Point(282, 262);
+            this.btEliminar.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEliminar.Location = new System.Drawing.Point(299, 243);
             this.btEliminar.Name = "btEliminar";
-            this.btEliminar.Size = new System.Drawing.Size(145, 134);
+            this.btEliminar.Size = new System.Drawing.Size(140, 33);
             this.btEliminar.TabIndex = 3;
             this.btEliminar.Text = "ELIMINAR";
             this.btEliminar.UseVisualStyleBackColor = false;
@@ -91,12 +97,33 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(135, 89);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(220, 28);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "MENU EMPLEADOS";
+            // 
+            // lbUsuario
+            // 
+            this.lbUsuario.AutoSize = true;
+            this.lbUsuario.Location = new System.Drawing.Point(324, 27);
+            this.lbUsuario.Name = "lbUsuario";
+            this.lbUsuario.Size = new System.Drawing.Size(35, 13);
+            this.lbUsuario.TabIndex = 6;
+            this.lbUsuario.Text = "label2";
+            // 
             // MenuEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(484, 451);
+            this.Controls.Add(this.lbUsuario);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btEliminar);
             this.Controls.Add(this.button3);
@@ -107,6 +134,7 @@
             this.Text = "CODICE\\empleados";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -117,5 +145,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btEliminar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbUsuario;
     }
 }

@@ -33,7 +33,7 @@ namespace Company
             SqlDataReader reader = command.ExecuteReader();
             if (reader.Read())
             {
-                MenuPrincipal menu = new MenuPrincipal();
+                MenuPrincipal menu = new MenuPrincipal(usuario);
                 menu.Show();
             }
             else
