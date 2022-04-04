@@ -28,5 +28,11 @@ namespace Company.PL.Departamentos
             ListarDepartamento listar = new ListarDepartamento();
             listar.Show();
         }
+
+        private void btEliminar_Click(object sender, EventArgs e)
+        {
+            EliminarDepartamento eliminar = new EliminarDepartamento();
+            eliminar.Show();
+        }
     }
 }

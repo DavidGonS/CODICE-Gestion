@@ -1,6 +1,6 @@
 ﻿namespace Company.PL.Departamentos
 {
-    partial class ListarDepartamento
+    partial class EliminarDepartamento
     {
         /// <summary>
         /// Required designer variable.
@@ -30,8 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.tbNombreDepartamento = new System.Windows.Forms.TextBox();
-            this.tbLista = new System.Windows.Forms.TextBox();
-            this.btListar = new System.Windows.Forms.Button();
+            this.btEliminar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -39,40 +38,31 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(161, 71);
+            this.label1.Location = new System.Drawing.Point(37, 94);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 13);
+            this.label1.Size = new System.Drawing.Size(182, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Introduce el nombre del departamento:";
+            this.label1.Text = "Nombre del departamento a eliminar: ";
             // 
             // tbNombreDepartamento
             // 
             this.tbNombreDepartamento.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.tbNombreDepartamento.Location = new System.Drawing.Point(356, 68);
+            this.tbNombreDepartamento.Location = new System.Drawing.Point(235, 91);
             this.tbNombreDepartamento.Name = "tbNombreDepartamento";
             this.tbNombreDepartamento.Size = new System.Drawing.Size(100, 20);
             this.tbNombreDepartamento.TabIndex = 1;
             // 
-            // tbLista
+            // btEliminar
             // 
-            this.tbLista.Location = new System.Drawing.Point(164, 137);
-            this.tbLista.Multiline = true;
-            this.tbLista.Name = "tbLista";
-            this.tbLista.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbLista.Size = new System.Drawing.Size(494, 285);
-            this.tbLista.TabIndex = 2;
-            // 
-            // btListar
-            // 
-            this.btListar.BackColor = System.Drawing.SystemColors.Window;
-            this.btListar.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F);
-            this.btListar.Location = new System.Drawing.Point(356, 108);
-            this.btListar.Name = "btListar";
-            this.btListar.Size = new System.Drawing.Size(100, 23);
-            this.btListar.TabIndex = 3;
-            this.btListar.Text = "BUSCAR";
-            this.btListar.UseVisualStyleBackColor = false;
-            this.btListar.Click += new System.EventHandler(this.btListar_Click);
+            this.btEliminar.BackColor = System.Drawing.SystemColors.Window;
+            this.btEliminar.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F);
+            this.btEliminar.Location = new System.Drawing.Point(165, 150);
+            this.btEliminar.Name = "btEliminar";
+            this.btEliminar.Size = new System.Drawing.Size(100, 23);
+            this.btEliminar.TabIndex = 2;
+            this.btEliminar.Text = "ELIMINAR";
+            this.btEliminar.UseVisualStyleBackColor = false;
+            this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click);
             // 
             // pictureBox1
             // 
@@ -81,23 +71,22 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(115, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // ListarDepartamento
+            // EliminarDepartamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(484, 451);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btListar);
-            this.Controls.Add(this.tbLista);
+            this.Controls.Add(this.btEliminar);
             this.Controls.Add(this.tbNombreDepartamento);
             this.Controls.Add(this.label1);
-            this.Name = "ListarDepartamento";
+            this.Name = "EliminarDepartamento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ListarDepartamento";
+            this.Text = "EliminarDepartamento";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -108,8 +97,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbNombreDepartamento;
-        private System.Windows.Forms.TextBox tbLista;
-        private System.Windows.Forms.Button btListar;
+        private System.Windows.Forms.Button btEliminar;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

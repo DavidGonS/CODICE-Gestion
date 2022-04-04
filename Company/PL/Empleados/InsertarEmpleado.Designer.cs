@@ -186,7 +186,7 @@
             this.Controls.Add(this.label1);
             this.Name = "InsertarEmpleado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CODICE\\empleados-insertar";
+            this.Text = "Insertar Empleado";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

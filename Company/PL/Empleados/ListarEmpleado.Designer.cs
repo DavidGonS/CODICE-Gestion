@@ -117,7 +117,7 @@
             this.Controls.Add(this.lbId);
             this.Name = "ListarEmpleado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CODICE\\empleados-listar";
+            this.Text = "Listar Empleados";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

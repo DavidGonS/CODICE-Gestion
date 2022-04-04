@@ -90,7 +90,7 @@
             this.Controls.Add(this.btDepartamento);
             this.Name = "MenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CODICE\\Menu";
+            this.Text = "MENU PRINCIPAL";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

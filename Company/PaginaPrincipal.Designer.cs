@@ -110,7 +110,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "PaginaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CODICE\\Gestion";
+            this.Text = "GESTION CODICE";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
