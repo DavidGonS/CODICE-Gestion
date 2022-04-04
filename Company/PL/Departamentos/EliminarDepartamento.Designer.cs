@@ -32,6 +32,7 @@
             this.tbNombreDepartamento = new System.Windows.Forms.TextBox();
             this.btEliminar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbUsuario = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,12 +75,22 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // lbUsuario
+            // 
+            this.lbUsuario.AutoSize = true;
+            this.lbUsuario.Location = new System.Drawing.Point(324, 27);
+            this.lbUsuario.Name = "lbUsuario";
+            this.lbUsuario.Size = new System.Drawing.Size(35, 13);
+            this.lbUsuario.TabIndex = 4;
+            this.lbUsuario.Text = "label2";
+            // 
             // EliminarDepartamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(484, 451);
+            this.Controls.Add(this.lbUsuario);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btEliminar);
             this.Controls.Add(this.tbNombreDepartamento);
@@ -99,5 +110,6 @@
         private System.Windows.Forms.TextBox tbNombreDepartamento;
         private System.Windows.Forms.Button btEliminar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbUsuario;
     }
 }

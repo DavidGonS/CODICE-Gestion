@@ -21,6 +21,12 @@ namespace Company.PL.Departamentos
             InitializeComponent();
         }
 
+        public InsertarDepartamento(string usuario)
+        {
+            InitializeComponent();
+            lbUsuario.Text = usuario;
+        }
+
         private void btInsertar_Click(object sender, EventArgs e)
         {
             connection.Open();

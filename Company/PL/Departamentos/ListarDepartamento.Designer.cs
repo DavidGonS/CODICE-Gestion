@@ -33,6 +33,7 @@
             this.tbLista = new System.Windows.Forms.TextBox();
             this.btListar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbUsuario = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,12 +85,22 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // lbUsuario
+            // 
+            this.lbUsuario.AutoSize = true;
+            this.lbUsuario.Location = new System.Drawing.Point(624, 23);
+            this.lbUsuario.Name = "lbUsuario";
+            this.lbUsuario.Size = new System.Drawing.Size(35, 13);
+            this.lbUsuario.TabIndex = 5;
+            this.lbUsuario.Text = "label2";
+            // 
             // ListarDepartamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbUsuario);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btListar);
             this.Controls.Add(this.tbLista);
@@ -111,5 +122,6 @@
         private System.Windows.Forms.TextBox tbLista;
         private System.Windows.Forms.Button btListar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbUsuario;
     }
 }

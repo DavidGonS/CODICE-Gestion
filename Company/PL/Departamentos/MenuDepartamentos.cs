@@ -17,21 +17,30 @@ namespace Company.PL.Departamentos
             InitializeComponent();
         }
 
+        public MenuDepartamentos(string usuario)
+        {
+            InitializeComponent();
+            lbUsuario.Text = usuario;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            InsertarDepartamento insertar = new InsertarDepartamento();
+            string usuario = lbUsuario.Text;
+            InsertarDepartamento insertar = new InsertarDepartamento(usuario);
             insertar.Show();
         }
 
         private void btListar_Click(object sender, EventArgs e)
         {
-            ListarDepartamento listar = new ListarDepartamento();
+            string usuario = lbUsuario.Text;
+            ListarDepartamento listar = new ListarDepartamento(usuario);
             listar.Show();
         }
 
         private void btEliminar_Click(object sender, EventArgs e)
         {
-            EliminarDepartamento eliminar = new EliminarDepartamento();
+            string usuario = lbUsuario.Text;
+            EliminarDepartamento eliminar = new EliminarDepartamento(usuario);
             eliminar.Show();
         }
     }

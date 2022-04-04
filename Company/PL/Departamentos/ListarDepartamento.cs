@@ -17,9 +17,11 @@ namespace Company.PL.Departamentos
 
         private SqlConnection connection = new SqlConnection("server=BATTISTA\\DAVIDSERVER; database=company; integrated security=true");
 
-        public ListarDepartamento()
+
+        public ListarDepartamento(string usuario)
         {
             InitializeComponent();
+            lbUsuario.Text = usuario;
         }
 
         private void btListar_Click(object sender, EventArgs e)

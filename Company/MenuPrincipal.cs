@@ -27,7 +27,8 @@ namespace Company
 
         private void btDepartamento_Click(object sender, EventArgs e)
         {
-            PL.Departamentos.MenuDepartamentos departamentos = new PL.Departamentos.MenuDepartamentos();
+            string usuario = lbUsuario.Text;
+            PL.Departamentos.MenuDepartamentos departamentos = new PL.Departamentos.MenuDepartamentos(usuario);
             departamentos.Show();
         }
 

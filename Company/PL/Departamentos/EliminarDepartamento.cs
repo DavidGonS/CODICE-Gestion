@@ -21,6 +21,12 @@ namespace Company.PL.Departamentos
             InitializeComponent();
         }
 
+        public EliminarDepartamento(string usuario)
+        {
+            InitializeComponent();
+            lbUsuario.Text = usuario;
+        }
+
         private void btEliminar_Click(object sender, EventArgs e)
         {
             connection.Open();

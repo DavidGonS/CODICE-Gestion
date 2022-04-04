@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.lbId = new System.Windows.Forms.Label();
             this.tbId = new System.Windows.Forms.TextBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btBuscar = new System.Windows.Forms.Button();
             this.tbLista = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -56,11 +54,6 @@
             this.tbId.Name = "tbId";
             this.tbId.Size = new System.Drawing.Size(100, 20);
             this.tbId.TabIndex = 1;
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // btBuscar
             // 
@@ -128,7 +121,6 @@
 
         private System.Windows.Forms.Label lbId;
         private System.Windows.Forms.TextBox tbId;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Button btBuscar;
         private System.Windows.Forms.TextBox tbLista;
         private System.Windows.Forms.PictureBox pictureBox1;

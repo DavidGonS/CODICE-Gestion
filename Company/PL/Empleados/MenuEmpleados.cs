@@ -50,5 +50,10 @@ namespace Company.PL
             Empleados.EliminarEmpleado eliminar = new Empleados.EliminarEmpleado(usuario);
             eliminar.Show();
         }
+
+        private void MenuEmpleados_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
