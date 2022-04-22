@@ -13,5 +13,6 @@ namespace Company.BLL
         public string primerApellido { get; set; }
         public string segundoApellido { get; set; }
         public string email { get; set; }
+        public string nombreDepartamento { get; set; }
     }
 }

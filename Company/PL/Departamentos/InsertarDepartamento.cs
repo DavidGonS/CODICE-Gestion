@@ -14,7 +14,7 @@ namespace Company.PL.Departamentos
 {
     public partial class InsertarDepartamento : Form
     {
-        private SqlConnection connection = new SqlConnection("server=BATTISTA\\DAVIDSERVER; database=company; integrated security=true");
+        private SqlConnection connection = new SqlConnection("server=BATTISTA\\DAVIDSERVER; database=company2; integrated security=true");
 
         public InsertarDepartamento()
         {

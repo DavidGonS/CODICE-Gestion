@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListarDepartamento));
             this.label1 = new System.Windows.Forms.Label();
             this.tbNombreDepartamento = new System.Windows.Forms.TextBox();
             this.tbLista = new System.Windows.Forms.TextBox();
@@ -106,6 +107,7 @@
             this.Controls.Add(this.tbLista);
             this.Controls.Add(this.tbNombreDepartamento);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ListarDepartamento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListarDepartamento";

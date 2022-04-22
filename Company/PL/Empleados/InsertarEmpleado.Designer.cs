@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InsertarEmpleado));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,6 +42,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tbNombreDepartamento = new System.Windows.Forms.TextBox();
             this.lbUsuario = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dtpFechaIncorporacion = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,7 +123,7 @@
             // 
             this.btEnviar.BackColor = System.Drawing.SystemColors.Window;
             this.btEnviar.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEnviar.Location = new System.Drawing.Point(36, 366);
+            this.btEnviar.Location = new System.Drawing.Point(36, 439);
             this.btEnviar.Name = "btEnviar";
             this.btEnviar.Size = new System.Drawing.Size(75, 23);
             this.btEnviar.TabIndex = 8;
@@ -165,12 +168,38 @@
             this.lbUsuario.TabIndex = 12;
             this.lbUsuario.Text = "label6";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(33, 363);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(119, 16);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Fecha Incorporación:";
+            // 
+            // dtpFechaIncorporacion
+            // 
+            this.dtpFechaIncorporacion.CalendarForeColor = System.Drawing.SystemColors.HotTrack;
+            this.dtpFechaIncorporacion.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
+            this.dtpFechaIncorporacion.CalendarTitleBackColor = System.Drawing.SystemColors.HotTrack;
+            this.dtpFechaIncorporacion.CalendarTitleForeColor = System.Drawing.SystemColors.HotTrack;
+            this.dtpFechaIncorporacion.CalendarTrailingForeColor = System.Drawing.SystemColors.HotTrack;
+            this.dtpFechaIncorporacion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaIncorporacion.Location = new System.Drawing.Point(36, 382);
+            this.dtpFechaIncorporacion.Name = "dtpFechaIncorporacion";
+            this.dtpFechaIncorporacion.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaIncorporacion.TabIndex = 15;
+            this.dtpFechaIncorporacion.ValueChanged += new System.EventHandler(this.dtpFechaIncorporacion_ValueChanged);
+            // 
             // InsertarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(484, 451);
+            this.ClientSize = new System.Drawing.Size(484, 541);
+            this.Controls.Add(this.dtpFechaIncorporacion);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.lbUsuario);
             this.Controls.Add(this.tbNombreDepartamento);
             this.Controls.Add(this.label5);
@@ -184,6 +213,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "InsertarEmpleado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Insertar Empleado";
@@ -208,5 +238,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbNombreDepartamento;
         private System.Windows.Forms.Label lbUsuario;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker dtpFechaIncorporacion;
     }
 }

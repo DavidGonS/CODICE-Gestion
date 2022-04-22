@@ -13,7 +13,7 @@ namespace Company.PL
 {
     public partial class InsertarEmpleado : Form
     {
-        private SqlConnection connection = new SqlConnection("server=BATTISTA\\DAVIDSERVER; database=company; integrated security=true");
+        private SqlConnection connection = new SqlConnection("server=BATTISTA\\DAVIDSERVER; database=company2; integrated security=true");
 
         public InsertarEmpleado()
         {
@@ -34,9 +34,10 @@ namespace Company.PL
             string segundoApellido = tbSegundoApellido.Text;
             string email = tbEmail.Text;
             string nombreDepartamento = tbNombreDepartamento.Text;
+            string fechaIncorporacion = dtpFechaIncorporacion.Value.ToShortDateString();
 
-            string query = "INSERT INTO Empleados(nombre, primerApellido, segundoApellido, email, nombreDepartamento) " +
-                "VALUES('" + nombre + "','" + primerApellido + "','" + segundoApellido + "','" + email + "','" + nombreDepartamento + "')";
+            string query = "INSERT INTO Empleados(nombre, primerApellido, segundoApellido, email, nombreDepartamento, fechaIncorporacion) " +
+                "VALUES('" + nombre + "','" + primerApellido + "','" + segundoApellido + "','" + email + "','" + nombreDepartamento + "','" + fechaIncorporacion + "')";
             SqlCommand command = new SqlCommand(query, connection);
             command.ExecuteNonQuery();
             MessageBox.Show("Datos guardados correctamente");
@@ -47,6 +48,11 @@ namespace Company.PL
             tbEmail.Text = "";
             tbNombreDepartamento.Text = "";
             connection.Close();
+        }
+
+        private void dtpFechaIncorporacion_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
