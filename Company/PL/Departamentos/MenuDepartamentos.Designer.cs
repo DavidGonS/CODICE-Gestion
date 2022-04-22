@@ -32,9 +32,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btListar = new System.Windows.Forms.Button();
             this.btEliminar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lbUsuario = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,16 +74,6 @@
             this.btEliminar.UseVisualStyleBackColor = false;
             this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Company.Properties.Resources.logoCodice;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(115, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -103,11 +93,21 @@
             this.lbUsuario.TabIndex = 5;
             this.lbUsuario.Text = "label2";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Company.Properties.Resources.logoCodice;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(115, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // MenuDepartamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(484, 411);
             this.Controls.Add(this.lbUsuario);
             this.Controls.Add(this.label1);

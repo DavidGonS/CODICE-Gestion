@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
 using System.Data.SqlClient;
+using System.Linq;
+
+using System.Windows.Forms;
 
 namespace Company.PL.Empleados
 {
@@ -72,12 +66,27 @@ namespace Company.PL.Empleados
                 lbEmail.Text = "";
                 lbNombreDepartamento.Text = "";
                 MessageBox.Show("El empleado con id " + id + " ha sido eliminado correctamente");
-            } else
+            }
+            else
             {
                 MessageBox.Show("No existe el empleado con id: " + id);
             }
             connection.Close();
             btEliminar.Enabled = false;
+        }
+
+        private void btModificar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string usuario = lbUsuario.Text;
+            MenuEmpleados menu = new MenuEmpleados(usuario);
+            menu.Show();
+            this.Close();
         }
     }
 }

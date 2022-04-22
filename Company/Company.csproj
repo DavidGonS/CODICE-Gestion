@@ -175,5 +175,44 @@
   <ItemGroup>
     <None Include="Resources\logoCodice.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleadosLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\departamentosLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\departamentosLogo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m2i8Z5m2G6N4i8m2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\285657_floppy_guardar_save_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3844432_magnifier_search_zoom_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5402373_write_modify_tool_edit_pen_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211934_trash_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1564506_close_exit_logout_power_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8680038_arrow_go_back_fill_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

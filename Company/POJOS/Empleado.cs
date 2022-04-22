@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Company.BLL
 {
@@ -14,5 +11,8 @@ namespace Company.BLL
         public string segundoApellido { get; set; }
         public string email { get; set; }
         public string nombreDepartamento { get; set; }
+
+        public DateTime fechaIncorporacion { get; set; }
+        public DateTime fechaSalida { get; set; }
     }
 }

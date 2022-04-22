@@ -40,11 +40,15 @@
             this.tbSegundoApellido = new System.Windows.Forms.TextBox();
             this.tbPrimerApellido = new System.Windows.Forms.TextBox();
             this.tbNombre = new System.Windows.Forms.TextBox();
-            this.btModificar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tbNombreDepartamento = new System.Windows.Forms.TextBox();
             this.lbUsuario = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dtpFechaSalida = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btModificar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,7 +91,7 @@
             this.label2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(37, 310);
+            this.label2.Location = new System.Drawing.Point(282, 207);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 16);
             this.label2.TabIndex = 3;
@@ -98,7 +102,7 @@
             this.label3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(37, 266);
+            this.label3.Location = new System.Drawing.Point(35, 207);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 16);
             this.label3.TabIndex = 4;
@@ -109,7 +113,7 @@
             this.label4.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(37, 214);
+            this.label4.Location = new System.Drawing.Point(231, 169);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(90, 16);
             this.label4.TabIndex = 5;
@@ -130,7 +134,7 @@
             // 
             this.tbEmail.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.tbEmail.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.tbEmail.Location = new System.Drawing.Point(208, 307);
+            this.tbEmail.Location = new System.Drawing.Point(327, 205);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(100, 20);
             this.tbEmail.TabIndex = 7;
@@ -139,7 +143,7 @@
             // 
             this.tbSegundoApellido.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.tbSegundoApellido.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.tbSegundoApellido.Location = new System.Drawing.Point(208, 263);
+            this.tbSegundoApellido.Location = new System.Drawing.Point(144, 205);
             this.tbSegundoApellido.Name = "tbSegundoApellido";
             this.tbSegundoApellido.Size = new System.Drawing.Size(100, 20);
             this.tbSegundoApellido.TabIndex = 8;
@@ -148,7 +152,7 @@
             // 
             this.tbPrimerApellido.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.tbPrimerApellido.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.tbPrimerApellido.Location = new System.Drawing.Point(208, 211);
+            this.tbPrimerApellido.Location = new System.Drawing.Point(327, 167);
             this.tbPrimerApellido.Name = "tbPrimerApellido";
             this.tbPrimerApellido.Size = new System.Drawing.Size(100, 20);
             this.tbPrimerApellido.TabIndex = 9;
@@ -157,39 +161,16 @@
             // 
             this.tbNombre.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.tbNombre.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.tbNombre.Location = new System.Drawing.Point(208, 166);
+            this.tbNombre.Location = new System.Drawing.Point(113, 167);
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(100, 20);
             this.tbNombre.TabIndex = 10;
-            // 
-            // btModificar
-            // 
-            this.btModificar.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.btModificar.BackColor = System.Drawing.SystemColors.Window;
-            this.btModificar.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btModificar.Location = new System.Drawing.Point(208, 400);
-            this.btModificar.Name = "btModificar";
-            this.btModificar.Size = new System.Drawing.Size(100, 23);
-            this.btModificar.TabIndex = 11;
-            this.btModificar.Text = "MODIFICAR";
-            this.btModificar.UseVisualStyleBackColor = false;
-            this.btModificar.Click += new System.EventHandler(this.btModificar_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Company.Properties.Resources.logoCodice;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(115, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(37, 352);
+            this.label6.Location = new System.Drawing.Point(35, 249);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(132, 16);
             this.label6.TabIndex = 13;
@@ -198,7 +179,7 @@
             // tbNombreDepartamento
             // 
             this.tbNombreDepartamento.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.tbNombreDepartamento.Location = new System.Drawing.Point(208, 352);
+            this.tbNombreDepartamento.Location = new System.Drawing.Point(173, 247);
             this.tbNombreDepartamento.Name = "tbNombreDepartamento";
             this.tbNombreDepartamento.Size = new System.Drawing.Size(100, 20);
             this.tbNombreDepartamento.TabIndex = 14;
@@ -212,12 +193,92 @@
             this.lbUsuario.TabIndex = 15;
             this.lbUsuario.Text = "label7";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(37, 292);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(76, 16);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Fecha Salida:";
+            // 
+            // dtpFechaSalida
+            // 
+            this.dtpFechaSalida.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaSalida.Location = new System.Drawing.Point(119, 287);
+            this.dtpFechaSalida.Name = "dtpFechaSalida";
+            this.dtpFechaSalida.Size = new System.Drawing.Size(100, 20);
+            this.dtpFechaSalida.TabIndex = 17;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Company.Properties.Resources.logoCodice;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(115, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btModificar
+            // 
+            this.btModificar.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.btModificar.BackColor = System.Drawing.SystemColors.Window;
+            this.btModificar.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btModificar.Image = global::Company.Properties.Resources._5402373_write_modify_tool_edit_pen_icon;
+            this.btModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btModificar.Location = new System.Drawing.Point(40, 331);
+            this.btModificar.Name = "btModificar";
+            this.btModificar.Size = new System.Drawing.Size(100, 23);
+            this.btModificar.TabIndex = 11;
+            this.btModificar.Text = "MODIFICAR";
+            this.btModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btModificar.UseVisualStyleBackColor = false;
+            this.btModificar.Click += new System.EventHandler(this.btModificar_Click);
+            // 
+            // button1
+            // 
+            this.button1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.button1.BackColor = System.Drawing.SystemColors.Window;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::Company.Properties.Resources._8680038_arrow_go_back_fill_icon;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(320, 376);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(71, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "VOLVER";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btSalir
+            // 
+            this.btSalir.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.btSalir.BackColor = System.Drawing.SystemColors.Window;
+            this.btSalir.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSalir.Image = global::Company.Properties.Resources._1564506_close_exit_logout_power_icon;
+            this.btSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btSalir.Location = new System.Drawing.Point(408, 376);
+            this.btSalir.Name = "btSalir";
+            this.btSalir.Size = new System.Drawing.Size(64, 23);
+            this.btSalir.TabIndex = 18;
+            this.btSalir.Text = "SALIR";
+            this.btSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btSalir.UseVisualStyleBackColor = false;
+            this.btSalir.Click += new System.EventHandler(this.btSalir_Click);
+            // 
             // ModificarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(484, 451);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(484, 411);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btSalir);
+            this.Controls.Add(this.dtpFechaSalida);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.lbUsuario);
             this.Controls.Add(this.tbNombreDepartamento);
             this.Controls.Add(this.label6);
@@ -262,5 +323,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbNombreDepartamento;
         private System.Windows.Forms.Label lbUsuario;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DateTimePicker dtpFechaSalida;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btSalir;
     }
 }

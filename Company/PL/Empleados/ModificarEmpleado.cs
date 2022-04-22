@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
 using System.Data.SqlClient;
+using System.Linq;
+
+using System.Windows.Forms;
 
 namespace Company.PL.Empleados
 {
@@ -32,7 +26,7 @@ namespace Company.PL.Empleados
             connection.Open();
             string id = tbId.Text;
 
-            string query = "SELECT id, nombre, primerApellido, segundoApellido, email, nombreDepartamento " +
+            string query = "SELECT id, nombre, primerApellido, segundoApellido, email, nombreDepartamento, fechaSalida " +
                             "FROM Empleados " +
                             "WHERE id='" + id + "'";
 
@@ -46,7 +40,8 @@ namespace Company.PL.Empleados
                 tbEmail.Text = reader["email"].ToString();
                 tbNombreDepartamento.Text = reader["nombreDepartamento"].ToString();
                 btModificar.Enabled = true;
-            } else
+            }
+            else
             {
                 MessageBox.Show("No existe el empleado con el id: " + id);
             }
@@ -77,13 +72,27 @@ namespace Company.PL.Empleados
                 tbSegundoApellido.Text = "";
                 tbEmail.Text = "";
                 tbNombreDepartamento.Text = "";
-            } else
+            }
+            else
             {
                 MessageBox.Show("No existe el empleado");
             }
             connection.Close();
             btModificar.Enabled = false;
-           
+
+        }
+
+        private void btSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string usuario = lbUsuario.Text;
+            MenuEmpleados menu = new MenuEmpleados();
+            menu.Show();
+            this.Close();
         }
     }
 }

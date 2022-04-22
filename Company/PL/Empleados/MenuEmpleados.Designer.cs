@@ -33,9 +33,11 @@
             this.btListar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btEliminar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lbUsuario = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,16 +90,6 @@
             this.btEliminar.UseVisualStyleBackColor = false;
             this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Company.Properties.Resources.logoCodice;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(115, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -117,12 +109,56 @@
             this.lbUsuario.TabIndex = 6;
             this.lbUsuario.Text = "label2";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Company.Properties.Resources.logoCodice;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(115, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.button1.BackColor = System.Drawing.SystemColors.Window;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::Company.Properties.Resources._8680038_arrow_go_back_fill_icon;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(320, 376);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(71, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "VOLVER";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btSalir
+            // 
+            this.btSalir.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.btSalir.BackColor = System.Drawing.SystemColors.Window;
+            this.btSalir.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSalir.Image = global::Company.Properties.Resources._1564506_close_exit_logout_power_icon;
+            this.btSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btSalir.Location = new System.Drawing.Point(408, 376);
+            this.btSalir.Name = "btSalir";
+            this.btSalir.Size = new System.Drawing.Size(64, 23);
+            this.btSalir.TabIndex = 18;
+            this.btSalir.Text = "SALIR";
+            this.btSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btSalir.UseVisualStyleBackColor = false;
+            this.btSalir.Click += new System.EventHandler(this.btSalir_Click);
+            // 
             // MenuEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(484, 411);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btSalir);
             this.Controls.Add(this.lbUsuario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -150,5 +186,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbUsuario;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btSalir;
     }
 }

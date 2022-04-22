@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
 using System.Data.SqlClient;
+using System.Linq;
+
+using System.Windows.Forms;
 
 namespace Company.PL.Empleados
 {
@@ -42,7 +36,7 @@ namespace Company.PL.Empleados
 
             if (reader.Read())
             {
-                
+
 
                 tbLista.AppendText("ID: ");
                 tbLista.AppendText(reader["id"].ToString());
@@ -86,7 +80,7 @@ namespace Company.PL.Empleados
 
             string query = "SELECT id, nombre, primerApellido, segundoApellido, email, nombreDepartamento, fechaIncorporacion " +
                 "from empleados " +
-                "where fechaIncorporacion between '" + fechaDesde + "' and '" + fechaHasta + "'"   ;
+                "where fechaIncorporacion between '" + fechaDesde + "' and '" + fechaHasta + "'";
 
             SqlCommand command = new SqlCommand(query, connection);
             SqlDataReader reader = command.ExecuteReader();
@@ -123,11 +117,25 @@ namespace Company.PL.Empleados
                 tbLista.AppendText(Environment.NewLine);
 
                 tbLista.AppendText(Environment.NewLine);
-            } else
+            }
+            else
             {
                 MessageBox.Show("No existen datos para estas fechas");
             }
             connection.Close();
+        }
+
+        private void btSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string usuario = lbUsuario.Text;
+            MenuEmpleados menu = new MenuEmpleados(usuario);
+            menu.Show();
+            this.Close();
         }
     }
 }

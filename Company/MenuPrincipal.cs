@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
+﻿
 using Company.PL;
+using System;
+using System.Linq;
+
+using System.Windows.Forms;
 
 namespace Company
 {
@@ -30,6 +25,7 @@ namespace Company
             string usuario = lbUsuario.Text;
             PL.Departamentos.MenuDepartamentos departamentos = new PL.Departamentos.MenuDepartamentos(usuario);
             departamentos.Show();
+            this.Close();
         }
 
         private void btEmpleados_Click(object sender, EventArgs e)
@@ -37,6 +33,12 @@ namespace Company
             string usuario = lbUsuario.Text;
             MenuEmpleados menu = new MenuEmpleados(usuario);
             menu.Show();
+            this.Close();
+        }
+
+        private void btSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

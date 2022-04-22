@@ -29,24 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaginaPrincipal));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btEntrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tbUsuario = new System.Windows.Forms.TextBox();
             this.tbContrasena = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Company.Properties.Resources.logoCodice;
-            this.pictureBox1.Location = new System.Drawing.Point(153, 93);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(191, 52);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // btEntrar
             // 
@@ -97,12 +88,41 @@
             this.tbContrasena.Size = new System.Drawing.Size(100, 20);
             this.tbContrasena.TabIndex = 5;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.pictureBox1.Image = global::Company.Properties.Resources.logoCodice;
+            this.pictureBox1.Location = new System.Drawing.Point(153, 93);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(191, 52);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // btSalir
+            // 
+            this.btSalir.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.btSalir.BackColor = System.Drawing.SystemColors.Window;
+            this.btSalir.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSalir.Image = global::Company.Properties.Resources._1564506_close_exit_logout_power_icon;
+            this.btSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btSalir.Location = new System.Drawing.Point(408, 416);
+            this.btSalir.Name = "btSalir";
+            this.btSalir.Size = new System.Drawing.Size(64, 23);
+            this.btSalir.TabIndex = 13;
+            this.btSalir.Text = "SALIR";
+            this.btSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btSalir.UseVisualStyleBackColor = false;
+            this.btSalir.Click += new System.EventHandler(this.btSalir_Click);
+            // 
             // PaginaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(484, 451);
+            this.Controls.Add(this.btSalir);
             this.Controls.Add(this.tbContrasena);
             this.Controls.Add(this.tbUsuario);
             this.Controls.Add(this.label2);
@@ -127,5 +147,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbUsuario;
         private System.Windows.Forms.TextBox tbContrasena;
+        private System.Windows.Forms.Button btSalir;
     }
 }

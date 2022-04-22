@@ -32,8 +32,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tbNombreDepartamento = new System.Windows.Forms.TextBox();
             this.btEliminar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbUsuario = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,6 +66,15 @@
             this.btEliminar.UseVisualStyleBackColor = false;
             this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click);
             // 
+            // lbUsuario
+            // 
+            this.lbUsuario.AutoSize = true;
+            this.lbUsuario.Location = new System.Drawing.Point(324, 27);
+            this.lbUsuario.Name = "lbUsuario";
+            this.lbUsuario.Size = new System.Drawing.Size(35, 13);
+            this.lbUsuario.TabIndex = 4;
+            this.lbUsuario.Text = "label2";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Company.Properties.Resources.logoCodice;
@@ -76,20 +85,11 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // lbUsuario
-            // 
-            this.lbUsuario.AutoSize = true;
-            this.lbUsuario.Location = new System.Drawing.Point(324, 27);
-            this.lbUsuario.Name = "lbUsuario";
-            this.lbUsuario.Size = new System.Drawing.Size(35, 13);
-            this.lbUsuario.TabIndex = 4;
-            this.lbUsuario.Text = "label2";
-            // 
             // EliminarDepartamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(484, 451);
             this.Controls.Add(this.lbUsuario);
             this.Controls.Add(this.pictureBox1);
