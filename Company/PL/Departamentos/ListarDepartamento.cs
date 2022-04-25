@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.Linq;
 
 using System.Windows.Forms;
+using Company.PL.ExtraWindows;
 
 namespace Company.PL.Departamentos
 {
@@ -24,20 +25,16 @@ namespace Company.PL.Departamentos
 
             string nombreDepartamento = tbNombreDepartamento.Text;
 
-            string query = "SELECT em.nombre, em.primerApellido, em.segundoApellido, em.email, em.NombreDepartamento " +
-                            "FROM Empleados em" +
-                            "full JOIN Departamentos dep ON em.id=dep.id " +
-                            "WHERE dep.nombre='" + nombreDepartamento + "'";
+            string query = "SELECT em.* " +
+                            "FROM Empleados em " +
+                            "full JOIN Departamentos dep ON em.codigoDepartamento=dep.id " +
+                            "WHERE dep.nombreDep='" + nombreDepartamento + "'";
 
             SqlCommand command = new SqlCommand(query, connection);
             SqlDataReader reader = command.ExecuteReader();
 
             if (reader.Read())
             {
-                tbLista.AppendText(Environment.NewLine);
-
-                tbLista.AppendText("ID: ");
-                tbLista.AppendText(reader["id"].ToString());
                 tbLista.AppendText(Environment.NewLine);
 
                 tbLista.AppendText("Nombre: ");
@@ -55,16 +52,26 @@ namespace Company.PL.Departamentos
                 tbLista.AppendText("Email: ");
                 tbLista.AppendText(reader["email"].ToString());
                 tbLista.AppendText(Environment.NewLine);
-
-                tbLista.AppendText("Nombre Departamento: ");
-                tbLista.AppendText(reader["nombreDepartamento"].ToString());
-                tbLista.AppendText(Environment.NewLine);
             }
             else
             {
                 MessageBox.Show("No existe el departamento " + nombreDepartamento);
             }
             connection.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string usuario = lbUsuario.Text;
+            MenuDepartamentos departamentos = new MenuDepartamentos(usuario);
+            departamentos.Show();
+            this.Close();
+        }
+
+        private void btSalir_Click_1(object sender, EventArgs e)
+        {
+            SalirAplicacion salir = new SalirAplicacion();
+            salir.Show();
         }
     }
 }

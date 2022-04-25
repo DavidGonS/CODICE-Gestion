@@ -173,9 +173,10 @@
             // lbUsuario
             // 
             this.lbUsuario.AutoSize = true;
+            this.lbUsuario.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F);
             this.lbUsuario.Location = new System.Drawing.Point(324, 27);
             this.lbUsuario.Name = "lbUsuario";
-            this.lbUsuario.Size = new System.Drawing.Size(35, 13);
+            this.lbUsuario.Size = new System.Drawing.Size(39, 16);
             this.lbUsuario.TabIndex = 15;
             this.lbUsuario.Text = "label6";
             // 

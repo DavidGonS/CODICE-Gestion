@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Windows.Forms;
+using Company.PL.ExtraWindows;
 
 namespace Company.PL
 {
@@ -56,7 +57,8 @@ namespace Company.PL
 
         private void btSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            SalirAplicacion salir = new SalirAplicacion();
+            salir.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

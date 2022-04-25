@@ -41,14 +41,14 @@
             this.tbPrimerApellido = new System.Windows.Forms.TextBox();
             this.tbNombre = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.tbNombreDepartamento = new System.Windows.Forms.TextBox();
+            this.tbCodigoDepartamento = new System.Windows.Forms.TextBox();
             this.lbUsuario = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dtpFechaSalida = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btModificar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btSalir = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btModificar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -172,24 +172,25 @@
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(35, 249);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 16);
+            this.label6.Size = new System.Drawing.Size(86, 16);
             this.label6.TabIndex = 13;
-            this.label6.Text = "Nombre Departamento:";
+            this.label6.Text = "Departamento:";
             // 
-            // tbNombreDepartamento
+            // tbCodigoDepartamento
             // 
-            this.tbNombreDepartamento.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.tbNombreDepartamento.Location = new System.Drawing.Point(173, 247);
-            this.tbNombreDepartamento.Name = "tbNombreDepartamento";
-            this.tbNombreDepartamento.Size = new System.Drawing.Size(100, 20);
-            this.tbNombreDepartamento.TabIndex = 14;
+            this.tbCodigoDepartamento.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.tbCodigoDepartamento.Location = new System.Drawing.Point(127, 245);
+            this.tbCodigoDepartamento.Name = "tbCodigoDepartamento";
+            this.tbCodigoDepartamento.Size = new System.Drawing.Size(100, 20);
+            this.tbCodigoDepartamento.TabIndex = 14;
             // 
             // lbUsuario
             // 
             this.lbUsuario.AutoSize = true;
+            this.lbUsuario.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F);
             this.lbUsuario.Location = new System.Drawing.Point(324, 27);
             this.lbUsuario.Name = "lbUsuario";
-            this.lbUsuario.Size = new System.Drawing.Size(35, 13);
+            this.lbUsuario.Size = new System.Drawing.Size(39, 16);
             this.lbUsuario.TabIndex = 15;
             this.lbUsuario.Text = "label7";
             // 
@@ -210,32 +211,6 @@
             this.dtpFechaSalida.Name = "dtpFechaSalida";
             this.dtpFechaSalida.Size = new System.Drawing.Size(100, 20);
             this.dtpFechaSalida.TabIndex = 17;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Company.Properties.Resources.logoCodice;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(115, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btModificar
-            // 
-            this.btModificar.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.btModificar.BackColor = System.Drawing.SystemColors.Window;
-            this.btModificar.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btModificar.Image = global::Company.Properties.Resources._5402373_write_modify_tool_edit_pen_icon;
-            this.btModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btModificar.Location = new System.Drawing.Point(40, 331);
-            this.btModificar.Name = "btModificar";
-            this.btModificar.Size = new System.Drawing.Size(100, 23);
-            this.btModificar.TabIndex = 11;
-            this.btModificar.Text = "MODIFICAR";
-            this.btModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btModificar.UseVisualStyleBackColor = false;
-            this.btModificar.Click += new System.EventHandler(this.btModificar_Click);
             // 
             // button1
             // 
@@ -269,6 +244,32 @@
             this.btSalir.UseVisualStyleBackColor = false;
             this.btSalir.Click += new System.EventHandler(this.btSalir_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Company.Properties.Resources.logoCodice;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(115, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btModificar
+            // 
+            this.btModificar.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.btModificar.BackColor = System.Drawing.SystemColors.Window;
+            this.btModificar.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btModificar.Image = global::Company.Properties.Resources._5402373_write_modify_tool_edit_pen_icon;
+            this.btModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btModificar.Location = new System.Drawing.Point(40, 331);
+            this.btModificar.Name = "btModificar";
+            this.btModificar.Size = new System.Drawing.Size(100, 23);
+            this.btModificar.TabIndex = 11;
+            this.btModificar.Text = "MODIFICAR";
+            this.btModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btModificar.UseVisualStyleBackColor = false;
+            this.btModificar.Click += new System.EventHandler(this.btModificar_Click);
+            // 
             // ModificarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,7 +281,7 @@
             this.Controls.Add(this.dtpFechaSalida);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lbUsuario);
-            this.Controls.Add(this.tbNombreDepartamento);
+            this.Controls.Add(this.tbCodigoDepartamento);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btModificar);
@@ -321,7 +322,7 @@
         private System.Windows.Forms.Button btModificar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox tbNombreDepartamento;
+        private System.Windows.Forms.TextBox tbCodigoDepartamento;
         private System.Windows.Forms.Label lbUsuario;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dtpFechaSalida;

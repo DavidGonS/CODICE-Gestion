@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.Linq;
 
 using System.Windows.Forms;
+using Company.PL.ExtraWindows;
 
 namespace Company.PL.Empleados
 {
@@ -26,7 +27,7 @@ namespace Company.PL.Empleados
             connection.Open();
             string id = tbId.Text;
 
-            string query = "SELECT id, nombre, primerApellido, segundoApellido, email, nombreDepartamento, fechaSalida " +
+            string query = "SELECT id, nombre, primerApellido, segundoApellido, email, codigoDepartamento, fechaSalida " +
                             "FROM Empleados " +
                             "WHERE id='" + id + "'";
 
@@ -38,7 +39,7 @@ namespace Company.PL.Empleados
                 tbPrimerApellido.Text = reader["primerApellido"].ToString();
                 tbSegundoApellido.Text = reader["segundoApellido"].ToString();
                 tbEmail.Text = reader["email"].ToString();
-                tbNombreDepartamento.Text = reader["nombreDepartamento"].ToString();
+                tbCodigoDepartamento.Text = reader["codigoDepartamento"].ToString();
                 btModificar.Enabled = true;
             }
             else
@@ -56,10 +57,11 @@ namespace Company.PL.Empleados
             string primerApellido = tbPrimerApellido.Text;
             string segundoApellido = tbSegundoApellido.Text;
             string email = tbEmail.Text;
-            string nombreDepartamento = tbNombreDepartamento.Text;
+            int codigoDepartamento = Convert.ToInt32(tbCodigoDepartamento.Text);
+            string fechaSalida = dtpFechaSalida.Value.ToShortDateString();
 
             string query = "UPDATE Empleados " +
-                            "SET nombre='" + nombre + "', primerApellido='" + primerApellido + "', segundoApellido='" + segundoApellido + "', email='" + email + "', nombreDepartamento='" + nombreDepartamento + "'" +
+                            "SET nombre='" + nombre + "', primerApellido='" + primerApellido + "', segundoApellido='" + segundoApellido + "', email='" + email + "', codigoDepartamento='" + codigoDepartamento + "', fechaSalida='" + fechaSalida + "'" +
                             "WHERE id=" + id;
             SqlCommand command = new SqlCommand(query, connection);
             int count = command.ExecuteNonQuery();
@@ -71,7 +73,7 @@ namespace Company.PL.Empleados
                 tbPrimerApellido.Text = "";
                 tbSegundoApellido.Text = "";
                 tbEmail.Text = "";
-                tbNombreDepartamento.Text = "";
+                tbCodigoDepartamento.Text = "";
             }
             else
             {
@@ -84,7 +86,8 @@ namespace Company.PL.Empleados
 
         private void btSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            SalirAplicacion salir = new SalirAplicacion();
+            salir.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

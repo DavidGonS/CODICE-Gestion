@@ -94,6 +94,12 @@
     <Compile Include="PL\Empleados\ModificarEmpleado.Designer.cs">
       <DependentUpon>ModificarEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\ExtraWindows\SalirAplicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\ExtraWindows\SalirAplicacion.Designer.cs">
+      <DependentUpon>SalirAplicacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="POJOS\Departamento.cs" />
     <Compile Include="POJOS\Empleado.cs" />
     <Compile Include="MenuPrincipal.cs">
@@ -148,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Empleados\ModificarEmpleado.resx">
       <DependentUpon>ModificarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\ExtraWindows\SalirAplicacion.resx">
+      <DependentUpon>SalirAplicacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

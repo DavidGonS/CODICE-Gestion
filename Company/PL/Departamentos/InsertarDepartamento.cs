@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.Linq;
 
 using System.Windows.Forms;
+using Company.PL.ExtraWindows;
 
 namespace Company.PL.Departamentos
 {
@@ -26,7 +27,7 @@ namespace Company.PL.Departamentos
             connection.Open();
             string nombre = tbNombreDepartamento.Text;
 
-            string query = "INSERT INTO Departamentos(nombre) " +
+            string query = "INSERT INTO Departamentos(nombreDep) " +
                             "VALUES('" + nombre + "')";
 
             SqlCommand command = new SqlCommand(query, connection);
@@ -37,6 +38,20 @@ namespace Company.PL.Departamentos
             tbNombreDepartamento.Text = "";
             connection.Close();
 
+        }
+
+        private void btSalir_Click_1(object sender, EventArgs e)
+        {
+            SalirAplicacion salir = new SalirAplicacion();
+            salir.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string usuario = lbUsuario.Text;
+            MenuDepartamentos departamentos = new MenuDepartamentos(usuario);
+            departamentos.Show();
+            this.Close();
         }
     }
 }

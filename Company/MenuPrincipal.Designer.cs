@@ -42,28 +42,30 @@
             // lbUsuario
             // 
             this.lbUsuario.AutoSize = true;
+            this.lbUsuario.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F);
             this.lbUsuario.Location = new System.Drawing.Point(324, 27);
             this.lbUsuario.Name = "lbUsuario";
-            this.lbUsuario.Size = new System.Drawing.Size(35, 13);
+            this.lbUsuario.Size = new System.Drawing.Size(39, 16);
             this.lbUsuario.TabIndex = 3;
             this.lbUsuario.Text = "label1";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F);
             this.label1.Location = new System.Drawing.Point(313, 139);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.Size = new System.Drawing.Size(75, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "EMPLEADOS";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F);
             this.label2.Location = new System.Drawing.Point(61, 139);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 13);
+            this.label2.Size = new System.Drawing.Size(105, 16);
             this.label2.TabIndex = 5;
             this.label2.Text = "DEPARTAMENTOS";
             // 

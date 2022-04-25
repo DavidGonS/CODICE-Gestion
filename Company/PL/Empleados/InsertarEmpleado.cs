@@ -2,6 +2,7 @@
 using System.Data.SqlClient;
 using System.Linq;
 using System.Windows.Forms;
+using Company.PL.ExtraWindows;
 
 namespace Company.PL
 {
@@ -27,11 +28,11 @@ namespace Company.PL
             string primerApellido = tbPrimerApellido.Text;
             string segundoApellido = tbSegundoApellido.Text;
             string email = tbEmail.Text;
-            string nombreDepartamento = tbNombreDepartamento.Text;
+            int codigoDepartamento = Convert.ToInt32(tbCodigoDepartamento.Text);
             string fechaIncorporacion = dtpFechaIncorporacion.Value.ToShortDateString();
 
-            string query = "INSERT INTO Empleados(nombre, primerApellido, segundoApellido, email, nombreDepartamento, fechaIncorporacion) " +
-                "VALUES('" + nombre + "','" + primerApellido + "','" + segundoApellido + "','" + email + "','" + nombreDepartamento + "','" + fechaIncorporacion + "')";
+            string query = "INSERT INTO Empleados(nombre, primerApellido, segundoApellido, email, fechaIncorporacion, codigoDepartamento) " +
+                "VALUES('" + nombre + "','" + primerApellido + "','" + segundoApellido + "','" + email + "','" + fechaIncorporacion + "','" + codigoDepartamento + "')";
             SqlCommand command = new SqlCommand(query, connection);
             command.ExecuteNonQuery();
             MessageBox.Show("Datos guardados correctamente");
@@ -40,7 +41,7 @@ namespace Company.PL
             tbPrimerApellido.Text = "";
             tbSegundoApellido.Text = "";
             tbEmail.Text = "";
-            tbNombreDepartamento.Text = "";
+            tbCodigoDepartamento.Text = "";
             connection.Close();
         }
 
@@ -55,12 +56,13 @@ namespace Company.PL
             tbPrimerApellido.Text = "";
             tbSegundoApellido.Text = "";
             tbEmail.Text = "";
-            tbNombreDepartamento.Text = "";
+            tbCodigoDepartamento.Text = "";
         }
 
         private void btModificar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            SalirAplicacion salir = new SalirAplicacion();
+            salir.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)

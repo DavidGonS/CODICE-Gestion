@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.Linq;
 
 using System.Windows.Forms;
+using Company.PL.ExtraWindows;
 
 namespace Company.PL.Departamentos
 {
@@ -27,7 +28,7 @@ namespace Company.PL.Departamentos
             string nombreDepartamento = tbNombreDepartamento.Text;
 
             string query = "DELETE FROM Departamentos " +
-                            "WHERE nombre='" + nombreDepartamento + "'";
+                            "WHERE nombreDep='" + nombreDepartamento + "'";
 
             SqlCommand command = new SqlCommand(query, connection);
             int count = command.ExecuteNonQuery();
@@ -44,6 +45,20 @@ namespace Company.PL.Departamentos
                 MessageBox.Show("No existe el departamento " + nombreDepartamento);
             }
             connection.Close();
+        }
+
+        private void btSalir_Click_1(object sender, EventArgs e)
+        {
+            SalirAplicacion salir = new SalirAplicacion();
+            salir.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string usuario = lbUsuario.Text;
+            MenuDepartamentos departamentos = new MenuDepartamentos(usuario);
+            departamentos.Show();
+            this.Close();
         }
     }
 }

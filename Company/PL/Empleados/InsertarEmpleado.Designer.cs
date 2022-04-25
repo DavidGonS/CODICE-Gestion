@@ -38,15 +38,15 @@
             this.tbSegundoApellido = new System.Windows.Forms.TextBox();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.tbNombreDepartamento = new System.Windows.Forms.TextBox();
+            this.tbCodigoDepartamento = new System.Windows.Forms.TextBox();
             this.lbUsuario = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dtpFechaIncorporacion = new System.Windows.Forms.DateTimePicker();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btSalir = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btEnviar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,24 +128,25 @@
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(246, 143);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(132, 16);
+            this.label5.Size = new System.Drawing.Size(127, 16);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Nombre Departamento:";
+            this.label5.Text = "Codigo Departamento:";
             // 
-            // tbNombreDepartamento
+            // tbCodigoDepartamento
             // 
-            this.tbNombreDepartamento.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.tbNombreDepartamento.Location = new System.Drawing.Point(249, 159);
-            this.tbNombreDepartamento.Name = "tbNombreDepartamento";
-            this.tbNombreDepartamento.Size = new System.Drawing.Size(166, 20);
-            this.tbNombreDepartamento.TabIndex = 11;
+            this.tbCodigoDepartamento.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.tbCodigoDepartamento.Location = new System.Drawing.Point(249, 159);
+            this.tbCodigoDepartamento.Name = "tbCodigoDepartamento";
+            this.tbCodigoDepartamento.Size = new System.Drawing.Size(166, 20);
+            this.tbCodigoDepartamento.TabIndex = 11;
             // 
             // lbUsuario
             // 
             this.lbUsuario.AutoSize = true;
+            this.lbUsuario.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F);
             this.lbUsuario.Location = new System.Drawing.Point(324, 27);
             this.lbUsuario.Name = "lbUsuario";
-            this.lbUsuario.Size = new System.Drawing.Size(35, 13);
+            this.lbUsuario.Size = new System.Drawing.Size(39, 16);
             this.lbUsuario.TabIndex = 12;
             this.lbUsuario.Text = "label6";
             // 
@@ -172,6 +173,38 @@
             this.dtpFechaIncorporacion.Size = new System.Drawing.Size(102, 20);
             this.dtpFechaIncorporacion.TabIndex = 15;
             this.dtpFechaIncorporacion.ValueChanged += new System.EventHandler(this.dtpFechaIncorporacion_ValueChanged);
+            // 
+            // button2
+            // 
+            this.button2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.button2.BackColor = System.Drawing.SystemColors.Window;
+            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::Company.Properties.Resources._8680038_arrow_go_back_fill_icon;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(320, 376);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(71, 23);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "VOLVER";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btSalir
+            // 
+            this.btSalir.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.btSalir.BackColor = System.Drawing.SystemColors.Window;
+            this.btSalir.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSalir.Image = global::Company.Properties.Resources._1564506_close_exit_logout_power_icon;
+            this.btSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btSalir.Location = new System.Drawing.Point(408, 376);
+            this.btSalir.Name = "btSalir";
+            this.btSalir.Size = new System.Drawing.Size(64, 23);
+            this.btSalir.TabIndex = 18;
+            this.btSalir.Text = "SALIR";
+            this.btSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btSalir.UseVisualStyleBackColor = false;
+            this.btSalir.Click += new System.EventHandler(this.btModificar_Click);
             // 
             // button1
             // 
@@ -215,38 +248,6 @@
             this.btEnviar.UseVisualStyleBackColor = false;
             this.btEnviar.Click += new System.EventHandler(this.btEnviar_Click);
             // 
-            // button2
-            // 
-            this.button2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.button2.BackColor = System.Drawing.SystemColors.Window;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::Company.Properties.Resources._8680038_arrow_go_back_fill_icon;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(320, 376);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(71, 23);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "VOLVER";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btSalir
-            // 
-            this.btSalir.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.btSalir.BackColor = System.Drawing.SystemColors.Window;
-            this.btSalir.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSalir.Image = global::Company.Properties.Resources._1564506_close_exit_logout_power_icon;
-            this.btSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btSalir.Location = new System.Drawing.Point(408, 376);
-            this.btSalir.Name = "btSalir";
-            this.btSalir.Size = new System.Drawing.Size(64, 23);
-            this.btSalir.TabIndex = 18;
-            this.btSalir.Text = "SALIR";
-            this.btSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btSalir.UseVisualStyleBackColor = false;
-            this.btSalir.Click += new System.EventHandler(this.btModificar_Click);
-            // 
             // InsertarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -259,7 +260,7 @@
             this.Controls.Add(this.dtpFechaIncorporacion);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lbUsuario);
-            this.Controls.Add(this.tbNombreDepartamento);
+            this.Controls.Add(this.tbCodigoDepartamento);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btEnviar);
@@ -294,7 +295,7 @@
         private System.Windows.Forms.Button btEnviar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tbNombreDepartamento;
+        private System.Windows.Forms.TextBox tbCodigoDepartamento;
         private System.Windows.Forms.Label lbUsuario;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dtpFechaIncorporacion;

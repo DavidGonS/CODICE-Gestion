@@ -76,18 +76,20 @@
             // lbUsuario
             // 
             this.lbUsuario.AutoSize = true;
+            this.lbUsuario.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F);
             this.lbUsuario.Location = new System.Drawing.Point(624, 23);
             this.lbUsuario.Name = "lbUsuario";
-            this.lbUsuario.Size = new System.Drawing.Size(35, 13);
+            this.lbUsuario.Size = new System.Drawing.Size(39, 16);
             this.lbUsuario.TabIndex = 7;
             this.lbUsuario.Text = "label1";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F);
             this.label1.Location = new System.Drawing.Point(484, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 13);
+            this.label1.Size = new System.Drawing.Size(153, 16);
             this.label1.TabIndex = 8;
             this.label1.Text = "Fecha incorporacion desde:";
             // 
@@ -103,9 +105,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F);
             this.label2.Location = new System.Drawing.Point(484, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 13);
+            this.label2.Size = new System.Drawing.Size(150, 16);
             this.label2.TabIndex = 10;
             this.label2.Text = "Fecha incorporacion hasta:";
             // 

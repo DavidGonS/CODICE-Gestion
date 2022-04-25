@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Company.PL.ExtraWindows;
 
 namespace Company.PL.Departamentos
 {
@@ -42,6 +43,20 @@ namespace Company.PL.Departamentos
             string usuario = lbUsuario.Text;
             EliminarDepartamento eliminar = new EliminarDepartamento(usuario);
             eliminar.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string usuario = lbUsuario.Text;
+            MenuPrincipal menu = new MenuPrincipal(usuario);
+            menu.Show();
+            this.Close();
+        }
+
+        private void btSalir_Click(object sender, EventArgs e)
+        {
+            SalirAplicacion salir = new SalirAplicacion();
+            salir.Show();
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.Linq;
 
 using System.Windows.Forms;
+using Company.PL.ExtraWindows;
 
 
 namespace Company
@@ -49,7 +50,8 @@ namespace Company
 
         private void btSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            SalirAplicacion salir = new SalirAplicacion();
+            salir.Show();
         }
     }
 }

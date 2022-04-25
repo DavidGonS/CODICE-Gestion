@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.Linq;
 
 using System.Windows.Forms;
+using Company.PL.ExtraWindows;
 
 namespace Company.PL.Empleados
 {
@@ -26,7 +27,7 @@ namespace Company.PL.Empleados
             connection.Open();
             string id = tbId.Text;
 
-            string query = "SELECT id, nombre, primerApellido, segundoApellido, email, nombreDepartamento " +
+            string query = "SELECT id, nombre, primerApellido, segundoApellido, email, codigoDepartamento " +
                             "FROM Empleados " +
                             "WHERE id='" + id + "'";
 
@@ -39,7 +40,7 @@ namespace Company.PL.Empleados
                 lbPrimerApellido.Text = reader["primerApellido"].ToString();
                 lbSegundoApellido.Text = reader["segundoApellido"].ToString();
                 lbEmail.Text = reader["email"].ToString();
-                lbNombreDepartamento.Text = reader["nombreDepartamento"].ToString();
+                lbNombreDepartamento.Text = reader["codigoDepartamento"].ToString();
                 btEliminar.Enabled = true;
             }
             else
@@ -77,8 +78,8 @@ namespace Company.PL.Empleados
 
         private void btModificar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-
+            SalirAplicacion salir = new SalirAplicacion();
+            salir.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

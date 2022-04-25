@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.Linq;
 
 using System.Windows.Forms;
+using Company.PL.ExtraWindows;
 
 namespace Company.PL.Empleados
 {
@@ -27,7 +28,7 @@ namespace Company.PL.Empleados
 
             string id = tbId.Text;
 
-            string query = "SELECT id, nombre, primerApellido, segundoApellido, email, nombreDepartamento " +
+            string query = "SELECT id, nombre, primerApellido, segundoApellido, email, codigoDepartamento " +
                             "FROM Empleados " +
                             "WHERE id='" + id + "'";
 
@@ -36,12 +37,6 @@ namespace Company.PL.Empleados
 
             if (reader.Read())
             {
-
-
-                tbLista.AppendText("ID: ");
-                tbLista.AppendText(reader["id"].ToString());
-                tbLista.AppendText(Environment.NewLine);
-
                 tbLista.AppendText("Nombre: ");
                 tbLista.AppendText(reader["nombre"].ToString());
                 tbLista.AppendText(Environment.NewLine);
@@ -58,8 +53,8 @@ namespace Company.PL.Empleados
                 tbLista.AppendText(reader["email"].ToString());
                 tbLista.AppendText(Environment.NewLine);
 
-                tbLista.AppendText("Nombre Departamento: ");
-                tbLista.AppendText(reader["nombreDepartamento"].ToString());
+                tbLista.AppendText("Codigo Departamento: ");
+                tbLista.AppendText(reader["codigoDepartamento"].ToString());
                 tbLista.AppendText(Environment.NewLine);
 
                 tbLista.AppendText(Environment.NewLine);
@@ -78,7 +73,7 @@ namespace Company.PL.Empleados
             string fechaDesde = dtpDesde.Value.Date.ToString();
             string fechaHasta = dtpHasta.Value.Date.ToString();
 
-            string query = "SELECT id, nombre, primerApellido, segundoApellido, email, nombreDepartamento, fechaIncorporacion " +
+            string query = "SELECT id, nombre, primerApellido, segundoApellido, email, codigoDepartamento, fechaIncorporacion " +
                 "from empleados " +
                 "where fechaIncorporacion between '" + fechaDesde + "' and '" + fechaHasta + "'";
 
@@ -108,8 +103,8 @@ namespace Company.PL.Empleados
                 tbLista.AppendText(reader["email"].ToString());
                 tbLista.AppendText(Environment.NewLine);
 
-                tbLista.AppendText("Nombre Departamento: ");
-                tbLista.AppendText(reader["nombreDepartamento"].ToString());
+                tbLista.AppendText("Codigo Departamento: ");
+                tbLista.AppendText(reader["codigoDepartamento"].ToString());
                 tbLista.AppendText(Environment.NewLine);
 
                 tbLista.AppendText("Fecha Incorporacion: ");
@@ -127,7 +122,8 @@ namespace Company.PL.Empleados
 
         private void btSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            SalirAplicacion salir = new SalirAplicacion();
+            salir.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
