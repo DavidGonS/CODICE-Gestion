@@ -35,9 +35,10 @@
             this.btEliminar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lbUsuario = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btFichar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btSalir = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +46,7 @@
             // 
             this.btInsertar.BackColor = System.Drawing.SystemColors.Window;
             this.btInsertar.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInsertar.Location = new System.Drawing.Point(33, 172);
+            this.btInsertar.Location = new System.Drawing.Point(25, 150);
             this.btInsertar.Name = "btInsertar";
             this.btInsertar.Size = new System.Drawing.Size(141, 33);
             this.btInsertar.TabIndex = 0;
@@ -58,7 +59,7 @@
             this.btListar.BackColor = System.Drawing.SystemColors.Window;
             this.btListar.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btListar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btListar.Location = new System.Drawing.Point(299, 172);
+            this.btListar.Location = new System.Drawing.Point(172, 150);
             this.btListar.Name = "btListar";
             this.btListar.Size = new System.Drawing.Size(140, 33);
             this.btListar.TabIndex = 1;
@@ -70,7 +71,7 @@
             // 
             this.button3.BackColor = System.Drawing.SystemColors.Window;
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(33, 243);
+            this.button3.Location = new System.Drawing.Point(88, 214);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(141, 33);
             this.button3.TabIndex = 2;
@@ -82,7 +83,7 @@
             // 
             this.btEliminar.BackColor = System.Drawing.SystemColors.Window;
             this.btEliminar.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEliminar.Location = new System.Drawing.Point(299, 243);
+            this.btEliminar.Location = new System.Drawing.Point(322, 150);
             this.btEliminar.Name = "btEliminar";
             this.btEliminar.Size = new System.Drawing.Size(140, 33);
             this.btEliminar.TabIndex = 3;
@@ -110,15 +111,17 @@
             this.lbUsuario.TabIndex = 6;
             this.lbUsuario.Text = "label2";
             // 
-            // pictureBox1
+            // btFichar
             // 
-            this.pictureBox1.Image = global::Company.Properties.Resources.logoCodice;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(115, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.btFichar.BackColor = System.Drawing.SystemColors.Window;
+            this.btFichar.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btFichar.Location = new System.Drawing.Point(235, 214);
+            this.btFichar.Name = "btFichar";
+            this.btFichar.Size = new System.Drawing.Size(141, 33);
+            this.btFichar.TabIndex = 20;
+            this.btFichar.Text = "REGISTRAR HORAS";
+            this.btFichar.UseVisualStyleBackColor = false;
+            this.btFichar.Click += new System.EventHandler(this.btFichar_Click);
             // 
             // button1
             // 
@@ -152,12 +155,23 @@
             this.btSalir.UseVisualStyleBackColor = false;
             this.btSalir.Click += new System.EventHandler(this.btSalir_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Company.Properties.Resources.logoCodice;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(115, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // MenuEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(484, 411);
+            this.Controls.Add(this.btFichar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btSalir);
             this.Controls.Add(this.lbUsuario);
@@ -189,5 +203,6 @@
         private System.Windows.Forms.Label lbUsuario;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btSalir;
+        private System.Windows.Forms.Button btFichar;
     }
 }

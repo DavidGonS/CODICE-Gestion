@@ -93,7 +93,7 @@ namespace Company.PL.Empleados
         private void button1_Click(object sender, EventArgs e)
         {
             string usuario = lbUsuario.Text;
-            MenuEmpleados menu = new MenuEmpleados();
+            MenuEmpleados menu = new MenuEmpleados(usuario);
             menu.Show();
             this.Close();
         }

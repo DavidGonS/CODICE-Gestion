@@ -76,7 +76,7 @@
             this.tbUsuario.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.tbUsuario.Location = new System.Drawing.Point(229, 181);
             this.tbUsuario.Name = "tbUsuario";
-            this.tbUsuario.Size = new System.Drawing.Size(100, 20);
+            this.tbUsuario.Size = new System.Drawing.Size(115, 20);
             this.tbUsuario.TabIndex = 4;
             // 
             // tbContrasena
@@ -85,7 +85,7 @@
             this.tbContrasena.Location = new System.Drawing.Point(229, 235);
             this.tbContrasena.Name = "tbContrasena";
             this.tbContrasena.PasswordChar = '*';
-            this.tbContrasena.Size = new System.Drawing.Size(100, 20);
+            this.tbContrasena.Size = new System.Drawing.Size(115, 20);
             this.tbContrasena.TabIndex = 5;
             // 
             // pictureBox1

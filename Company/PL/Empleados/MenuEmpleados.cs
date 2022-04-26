@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Windows.Forms;
 using Company.PL.ExtraWindows;
+using Company.PL.Empleados;
 
 namespace Company.PL
 {
@@ -67,6 +68,13 @@ namespace Company.PL
             MenuPrincipal menu = new MenuPrincipal(usuario);
             menu.Show();
             this.Close();
+        }
+
+        private void btFichar_Click(object sender, EventArgs e)
+        {
+            string usuario = lbUsuario.Text;
+            RegistroHoras horas = new RegistroHoras(usuario);
+            horas.Show();
         }
     }
 }

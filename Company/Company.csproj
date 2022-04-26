@@ -94,6 +94,12 @@
     <Compile Include="PL\Empleados\ModificarEmpleado.Designer.cs">
       <DependentUpon>ModificarEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\Empleados\RegistroHoras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Empleados\RegistroHoras.Designer.cs">
+      <DependentUpon>RegistroHoras.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\ExtraWindows\SalirAplicacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Empleados\ModificarEmpleado.resx">
       <DependentUpon>ModificarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Empleados\RegistroHoras.resx">
+      <DependentUpon>RegistroHoras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\ExtraWindows\SalirAplicacion.resx">
       <DependentUpon>SalirAplicacion.cs</DependentUpon>

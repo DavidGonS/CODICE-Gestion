@@ -18,7 +18,7 @@ namespace Company
         public MenuPrincipal(string usuario)
         {
             InitializeComponent();
-            lbUsuario.Text = "User: " + usuario;
+            lbUsuario.Text = usuario;
         }
 
         private void btDepartamento_Click(object sender, EventArgs e)
